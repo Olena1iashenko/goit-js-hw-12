@@ -1,0 +1,134 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  padding: 36px 156px;
+  text-align: center;
+}
+
+.js-form {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.js-form input {
+  padding: 0px;
+  outline: none;
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-left: 16px;
+}
+
+.js-form input:hover {
+  border: 1px solid #000000;
+}
+
+.js-form button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.js-form button:hover {
+  background: #6c8cff;
+}
+
+.js-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  border: 1px solid #808080;
+  margin-bottom: 24px;
+  width: calc((100% - 24px * 2) / 3);
+  height: 248px;
+}
+
+.gallery-card {
+  overflow: auto;
+}
+
+.gallery-img {
+  overflow: hidden;
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-panel {
+  height: 48px;
+  width: 85%;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid rgb(63, 63, 193);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
