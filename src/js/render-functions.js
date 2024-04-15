@@ -1,4 +1,4 @@
-export const createGalleryCards = images => {
+export function createGalleryCards (images) {
   return images
     .map(
       img => `
@@ -17,3 +17,4 @@ export const createGalleryCards = images => {
     )
     .join('');
 };
+

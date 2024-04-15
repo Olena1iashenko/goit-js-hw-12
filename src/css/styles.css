@@ -46,11 +46,11 @@ body {
   border: 1px solid #000000;
 }
 
-.js-form button {
+.js-form button,
+button[type='button'] {
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
-  width: 91px;
   height: 40px;
   background: #4e75ff;
   font-family: 'Montserrat', sans-serif;
@@ -61,8 +61,17 @@ body {
   color: #fff;
 }
 
-.js-form button:hover {
+.js-form button:hover,
+button[type='button']:hover {
   background: #6c8cff;
+}
+
+.js-form button {
+  width: 91px;
+}
+
+.button[type='button'] {
+  width: 125px;
 }
 
 .js-gallery {
