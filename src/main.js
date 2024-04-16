@@ -81,7 +81,6 @@ async function onClickBtn (event) {
     
     if (lastPage === page) {
     loadMoreBtn.classList.add("is-hidden");
-    loadMoreBtn.removeEventListener("click", onClickBtn);
     return iziToast.info({
       message: "We're sorry, but you've reached the end of search results.",
       position: 'topRight',
